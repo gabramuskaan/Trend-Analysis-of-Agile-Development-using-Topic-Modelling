@@ -6,9 +6,6 @@ TABLE OF CONTENTS
 
 Chapter No.              Topics                                                                                                            
 
-
-                         Summary                                                                                                   
-
 Chapter-1                Introduction 	                   
 1.1                            General Introduction                                                                              
 1.2                            Problem Statement                                                                             
@@ -51,7 +48,6 @@ Chapter-6                Findings, Conclusion, and Future Work
 
 
 SUMMARY
-
 
 The project "Topic Modeling using Latent Dirichlet Allocation" is a machine learning project that uses the Latent Dirichlet Allocation (LDA) algorithm to identify topics within a set of documents. LDA is a probabilistic model that assumes each document is a mixture of topics and each topic is a mixture of words. The goal of LDA is to infer the topic distribution of each document and the word distribution of each topic. The project involves several steps, including data preprocessing, running the LDA algorithm, and evaluating the results. In data preprocessing, the raw text data is cleaned and transformed into a format suitable for LDA analysis. LDA is then run on the document-term matrix to identify the topics present in the data. Finally, the results are evaluated using metrics such as coherence and topic diversity. The project has many applications, such as identifying topics in social media data, analyzing customer reviews, and identifying trends in research papers. LDA has proven to be a powerful tool for topic modeling and has been widely used in various fields.
 
@@ -165,20 +161,19 @@ Overall, the solution approach for the "Topic Modeling using Latent Dirichlet Al
 
 Chapter-4:   Modeling and Implementation Details
 4.1   Design Diagrams
-      4.1.1  Use Case diagrams
+      4.1.1  Use Case diagrams  
+      ![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/eb7de49d-996d-44d9-983a-90a5e09bf5dc)
 
-	 
+ 4.1.2    Flow Diagram
+ ![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/31be9cf5-0547-4c58-a7a0-145d4712f1fa)      
  
+ 4.1.3   Sequence Diagram/Activity diagrams
+ ![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/f89aca01-cc37-44d4-99d4-7566e8a12cc0)
 
-
-     4.1.2    Flow Diagram
- 
-
-      4.1.3   Sequence Diagram/Activity diagrams
- 
 
 4.2   Implementation details 
 
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/095f54e1-2f03-444a-a4fd-301218c680c9)
  
 
 The following are some of the implementation details for this project:
@@ -192,38 +187,29 @@ These processes work together to enable the effective identification and analysi
 
 Features built, language used:
 We built a topic modeling system using LDA that can discover hidden topics in a collection of text documents. Python programming language was used to implement the system. The system also includes features such as data preprocessing, topic visualization, and topic evaluation metrics.
+
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/b6f042ac-1fe2-48ef-919b-fef29bffd1c8)
 All the necessary packages were imported.
-Data preprocessing was done which included removal of punctuations, numerical values, stop 
-words and Stemming using the Snowball Stemmer algorithm.
 
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/b8abacb7-8ffa-453b-8941-e713a6ffd064)
+Data preprocessing was done which included removal of punctuations, numerical values, stop words and Stemming using the Snowball Stemmer algorithm.
 
-
-
-
-
-
-
-
-
-
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/44fe340e-287d-44c4-b964-6989d79399e5)
 The preprocessed data was converted into a bag of word representation to proceed with the learning process.
 
- 
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/44ceac02-bb3b-4491-9018-7b292da5bd73)
 Initially we set the number of topics as 8 and the values of the hyperparameters Alpha and Beta were set to default.
  
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/c258b3a3-1104-454b-8ce7-9926c9591fe8)
 This visualization shows the Mean Probability Distribution of each topic across all the documents.
 
- 
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/c5bccdb1-4b0a-4607-92e2-d5caa89d86d9)
 This visualization shows a time series of the Topic Distribution over the period of 1990 - 2020.
 
-
-
- 
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/1f08b5ce-0638-42ec-8187-6febef0d91fd)
 The coherence score of the trained model was calculated.
 
-
-
- 
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/03161ba3-5b94-4f3b-9511-775d61201bcb)
 Lastly, we attempted to optimize our coherence score.
 
 4.3   Risk Analysis and Mitigation
@@ -248,9 +234,10 @@ The testing for the optimality of the coherence score was done in a brute-force 
 
 5.3    List all test cases in prescribed format
 
-There was only one test for the optimality of the coherence score in which we iterated                                                                                                                                                                               over every value of the number of topics, Alpha-value and Beta-value in a nested loop.
+There was only one test for the optimality of the coherence score in which we iterated over every value of the number of topics, Alpha-value and Beta-value in a nested loop.
 
- v
+![image](https://github.com/gabramuskaan/Trend-Analysis-of-Agile-Development-using-Topic-Modelling/assets/124431862/e91ed1f4-c945-4510-979d-e16212ba4271)
+
 These are all the values of the number of topics, Alpha, Beta and the coherence score that were obtained by trying every permutation possible to get the maximum coherence score.
 
 
